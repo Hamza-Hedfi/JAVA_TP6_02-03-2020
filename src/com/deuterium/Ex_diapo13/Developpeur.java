@@ -19,4 +19,21 @@ public class Developpeur extends Personne {
         double salaireDeveloppeur = salaireBase + augmentation;
         return  salaireDeveloppeur;
     }
+
+    @Override
+    public String toString() {
+        return "Developpeur{" +
+                "specialite='" + specialite + '\'' +
+                ", id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", mail='" + mail + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", salaire=" + salaire +
+                '}';
+    }
+
+    public void afficher() {
+        System.out.println("Le salaire du developpeur " + nom + " " + prenom + " est : " + calculerSalaire() +  " dh, sa spécialité : " + specialite);
+    }
 }

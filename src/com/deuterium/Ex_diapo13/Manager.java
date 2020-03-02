@@ -32,4 +32,8 @@ public class Manager extends Personne {
                 ", salaire=" + salaire +
                 '}';
     }
+
+    public void afficher() {
+        System.out.println("Le salaire du manager " + nom + " " + prenom + " est : " + calculerSalaire() + " dh, son service : " + service);
+    }
 }
