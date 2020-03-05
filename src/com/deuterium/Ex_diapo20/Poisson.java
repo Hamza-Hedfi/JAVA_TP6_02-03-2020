@@ -1,6 +1,6 @@
 package com.deuterium.Ex_diapo20;
 
-public class Poisson extends Animal {
+public abstract class Poisson extends Animal {
     public Poisson(String name) {
         super(name);
     }
